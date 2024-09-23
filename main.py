@@ -3,7 +3,7 @@ from langchain.chains.summarize.map_reduce_prompt import prompt_template
 from langchain_community.llms import Ollama
 from langchain_core.messages import HumanMessage, AIMessage
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
-
+import time
 # Configuración del modelo (verifica si hay una versión más rápida o menos compleja)
 llm = Ollama(model="llama3:8b")
 
